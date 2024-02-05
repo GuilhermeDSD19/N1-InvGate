@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Scripts - N1",
+    "version": "1.0",
+    "description": "Aplicação para otimizar o fluxo de trabalho no portal do invigate",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Scripts - N1",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

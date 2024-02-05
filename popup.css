@@ -1,0 +1,69 @@
+body {
+    width: 250px;
+    /* Ajuste a largura conforme necessário */
+    padding: 10px;
+    font-family: 'Helvetica', sans-serif;
+    /* Adiciona a fonte Helvetica */
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    /* Tamanho do título */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    /* Tamanho dos labels */
+}
+
+/* Estilo para os itens da lista */
+input[type="checkbox"] {
+    margin-right: 5px;
+    /* Adiciona espaçamento à direita dos checkboxes */
+}
+
+/* Lista de opções */
+#optionsList {
+    list-style: none;
+    padding: 0;
+}
+
+/* Adiciona espaçamento entre os items da lista */
+#optionsList li {
+    margin-bottom: 5px;
+    display: flex;
+    /* Torna os itens da lista flexíveis */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+}
+
+/* Container para rótulo e campo de entrada */
+#intervalContainer {
+    display: flex;
+    flex-direction: row;
+    /* Coloca os elementos em uma coluna */
+    justify-content: space-between;
+    /* Alinha verticalmente ao centro */
+    align-items: baseline;
+}
+
+/* Botão */
+#executeScript {
+    width: 100%;
+    margin-top: 5px;
+    /* Adiciona espaçamento acima do botão */
+    font-size: 1.2em;
+    /* Tamanho do botão */
+}
+
+/* Remove as setas de aumento e redução do campo de entrada */
+#loopInterval {
+    appearance: textfield;
+    width: 20%;
+    /* Largura do campo de entrada */
+}
