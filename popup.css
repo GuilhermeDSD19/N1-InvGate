@@ -79,3 +79,19 @@ button {
     appearance: textfield;
     width: 20%;
 }
+
+#selectContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#selectCol,
+#selectVal {
+    width: 48%;
+    /* Ajuste a largura conforme necessário */
+}
+
+#selectCol {
+    margin-right: 2%;
+    /* Adicione margem entre os selects */
+}

@@ -1,33 +1,3 @@
-// Atualizar a fila do N1 
-setInterval(function () {
-    document.querySelector('#tab_562').click();
-}, 1000);
-
-// Ordena por data de criação
-
-function filtraPorCriacao() {
-    var colSelect = document.querySelector('select[name="post_filter[order][1][col]"]');
-
-    if (colSelect) {
-        // Define o valor no select
-        colSelect.value = 'incidents.created_at';
-
-        // Cria um evento de mudança (change) e dispara no elemento do select
-        var event = new Event('change', { bubbles: true });
-        colSelect.dispatchEvent(event);
-    } else {
-        console.error('Select não encontrado');
-    }
-}
-
-filtraPorCriacao()
-
-
-
-
-
-
-
 
 //  OUTROS --- / --------------------------------
 
@@ -61,7 +31,3 @@ engrenagens.forEach(function (engrenagem) {
         }
     });
 });
-
-
-
-
