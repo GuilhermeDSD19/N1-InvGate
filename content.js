@@ -1,46 +1,42 @@
 let intervalId;
+const refreshButton = document.querySelector('#btn_refresh_requests');
 
-function iniciarLoop(intervalo) {
-    intervalId = setInterval(() => filtraPorCriacao().then(() => document.querySelector('#tab_562').click()), intervalo);
+function filtraPorFila() {
+    // Criar a função
+}
+
+function removeLoading() {
+    const loading = document.querySelector('.content-loader')
+    if (loading) {
+        loading.style.display = 'none'
+        console.log("Apaguei")
+    } else {
+        console.log("Não apaguei")
+    }
+    /* btn.addEventListener('click', function () {
+        const contentDiv = document.querySelector('.content');
+        contentDiv.classList.remove('content--loading');
+    }); */
+}
+
+function iniciarLoop(intervalo, btnUpdate) {
+    intervalId = setInterval(() => {
+        btnUpdate.click();
+        removeLoading();
+    }, intervalo);
 }
 
 function pararLoop() {
     clearInterval(intervalId);
 }
 
-function waitForSelectChange(colSelect) {
-    return new Promise(resolve => colSelect.addEventListener('change', resolve, { once: true }));
-}
-
-function filtraPorCriacao() {
-    return new Promise(resolve => {
-        const colSelect = document.querySelector('select[name="post_filter[order][1][col]"]');
-        const valSelect = document.querySelector('select[name="post_filter[order][1][val]"]');
-
-        if (!colSelect || !valSelect) {
-            console.error('Select não encontrado');
-            return resolve();
-        }
-
-        colSelect.value = 'incidents.created_at';
-        valSelect.value = 'DESC';
-
-        Promise.all([waitForSelectChange(colSelect), waitForSelectChange(valSelect)])
-            .then(resolve);
-
-        colSelect.dispatchEvent(new Event('change', { bubbles: true }));
-
-        // Adiciona um pequeno atraso (pode ser ajustado conforme necessário)
-        setTimeout(() => valSelect.dispatchEvent(new Event('change', { bubbles: true })), 100);
-    });
-}
-
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === 'executeScript') {
-        filtraPorCriacao().then(() => iniciarLoop(request.interval));
+        // filtraPorFila() -- EM DESENVOLVIMENTO
+        iniciarLoop(request.interval, refreshButton);
         alert('Script executado!');
-
-    } else if (request.action === 'pararLoop') {
+    }
+    if (request.action === 'pararLoop') {
         pararLoop();
         alert('Script finalizado!');
     }

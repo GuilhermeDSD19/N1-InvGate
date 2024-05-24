@@ -1,97 +1,95 @@
 body {
-    width: 250px;
-    padding: 10px;
-    font-family: 'Helvetica', sans-serif;
+  width: 250px;
+  padding: 10px;
+  font-family: "Helvetica", sans-serif;
 }
 
 h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.2em;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
 }
 
 input[type="checkbox"] {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 #optionsList {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #optionsList li {
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 #intervalContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 button {
-    width: 100%;
-    margin-top: 5px;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    /* Adiciona a mãozinha ao passar o mouse */
+  width: 100%;
+  margin-top: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  /* Adiciona a mãozinha ao passar o mouse */
 }
 
 #executeScript {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
 }
 
 #pararLoop {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
 }
 
 #executeScript:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 #pararLoop:hover {
-    background-color: #d32f2f;
+  background-color: #d32f2f;
 }
 
 #executeScript,
 #pararLoop {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #loopInterval {
-    appearance: textfield;
-    width: 20%;
+  appearance: textfield;
+  width: 20%;
 }
 
 #selectContainer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #selectCol,
 #selectVal {
-    width: 48%;
-    /* Ajuste a largura conforme necessário */
+  width: 48%;
 }
 
 #selectCol {
-    margin-right: 2%;
-    /* Adicione margem entre os selects */
+  margin-right: 2%;
 }
