@@ -17,7 +17,7 @@ Esta extensão para Google Chrome foi projetada para atualizar automaticamente a
 1. **Instalação:**
    - Clone o repositório do GitHub:
      ```bash
-     git clone <https://github.com/GuilhermeDSD19/N1-InvGate>
+     git clone https://github.com/GuilhermeDSD19/N1-InvGate
      ```
    - Abra o Google Chrome e acesse `chrome://extensions/`.
    - Ative o "Modo de desenvolvedor" no canto superior direito da página de extensões.
