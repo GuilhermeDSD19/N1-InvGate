@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Scripts - N2",
-    "version": "2.0.0",
+    "name": "Scripts - N1",
+    "version": "1.1.0",
     "description": "Aplicação voltada para a otimização do fluxo de trabalho no portal do Invgate.",
     "permissions": [
         "activeTab"
@@ -12,7 +12,7 @@
             "48": "icons/icon48.png",
             "128": "icons/icon128.png"
         },
-        "default_title": "Scripts - N2",
+        "default_title": "Scripts - N1",
         "default_popup": "popup.html"
     },
     "icons": {

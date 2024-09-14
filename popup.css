@@ -17,21 +17,6 @@ label {
   font-size: 1.2em;
 }
 
-input[type="checkbox"] {
-  margin-right: 5px;
-}
-
-#optionsList {
-  list-style: none;
-  padding: 0;
-}
-
-#optionsList li {
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-}
-
 #intervalContainer {
   display: flex;
   flex-direction: row;
@@ -45,7 +30,6 @@ button {
   font-size: 1.2em;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  /* Adiciona a mãozinha ao passar o mouse */
 }
 
 #executeScript {
@@ -78,18 +62,4 @@ button {
 #loopInterval {
   appearance: textfield;
   width: 20%;
-}
-
-#selectContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-#selectCol,
-#selectVal {
-  width: 48%;
-}
-
-#selectCol {
-  margin-right: 2%;
 }
